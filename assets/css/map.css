@@ -1,0 +1,241 @@
+body {
+    overflow:hidden;
+}
+body.single{
+    overflow-y:scroll;
+}
+.navbar-inner {
+    background: -moz-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#ffffff));
+    height:60px;
+    -webkit-box-shadow: 0 1px 20px RGBA(0,0,0,0.3);
+    -moz-box-shadow: 0 1px 20px RGBA(0,0,0,0.3);
+    box-shadow: 0 1px 20px RGBA(0,0,0,0.3);
+ }
+ #total{
+    float: right;
+ }
+ #total p{
+    font-family:'Open Sans', sans-serif;
+    font-weight:400;
+    line-height:60px;
+    font-size:18px;
+ }
+#wpadminbar{
+    display:none;
+}
+
+#map {
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+}
+#map.single {
+    top:0;
+    position:absolute;
+    height:420px;
+    width:100%;
+}
+#content{
+    position:relative;
+    margin-top:435px;
+}
+.info_details {
+    padding: 15px;
+}
+.crime_name {
+    background-color: #e0e0e0 !important;
+}
+.crime_name  a{
+    font-weight: bold !important;
+    font-size: 21px !important;
+    color:#363838 !important;
+    line-height:28px;
+}
+.crime_name  a:hover{
+    text-decoration: none;
+    color: #000 !important;
+}
+.crime_details {
+    background-color: #fcfcfc !important;
+    font-size:15px !important;
+    line-height:24px !important;
+}
+.hover{
+    text-align: center !important;
+}
+.crime_category{
+    font-size:18px !important;
+    font-weight:bold !important;
+}
+.onhover .crime_date{
+    padding:0 15px 15px 15px;
+}
+.onclick .crime_date{
+    padding:15px 0 0 15px;
+}
+.button_box {
+    background-color: #3B3738;
+}
+
+.info_box {
+    background-color:#fcfcfc;
+    color: #363838;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px !important;
+    width: 100%;
+    /*height: 135px;*/
+    padding: 0px;
+}
+
+#search_input {
+    height: 25px;
+}
+.onclick .hover{
+    display:none;
+}
+.onhover .click{
+    display:none;
+}
+/* Date Slider */
+#slider-wrap{
+   position:absolute;
+   bottom:0;
+   height:45px;
+   width:100%;
+   /*margin-left:8px;*/
+   -webkit-box-shadow: 0 -1px 20px RGBA(0,0,0,0.3);
+   -moz-box-shadow: 0 -1px 20px RGBA(0,0,0,0.3);
+   box-shadow: 0 -1px 20px RGBA(0,0,0,0.3);
+}
+#date-ruler{
+    z-index:9999;
+}
+/* Bootstrap overwrites */
+.navbar .brand{
+    padding-top:3px;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Sidebar */
+
+#crime-wrap.span3{
+    display:block;
+    width:25%;
+    position: absolute;
+    background: rgba(250, 250, 250, 0.85);
+    height: 1000px;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    z-index: 99;
+}
+#crime-wrap #crime{
+    padding:85px 0 0 15px;
+}
+#crime-wrap #crime h1,
+#crime-wrap #crime h4,
+#crime-wrap #crime p{
+    padding-right: 15px;
+}
+#crime-wrap #crime p{
+    overflow-y: auto;
+}
+#crime-wrap ul{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    margin:0;
+    list-style-type: none;
+    border-top:1px solid #ccc;
+}
+#crime-wrap ul li{
+    width:50%;
+    float:left;
+}
+#crime-wrap ul li a{
+    font-family: 'Open Sans', sans-serif;
+    width:auto;
+    padding:15px;
+    display:block;
+    text-align:center;
+    font-size:21px;
+    color:#666;
+}
+#crime-wrap ul li a:hover{
+    background:#f9f9f9;
+    color:#131313;
+    text-decoration: none;
+}
+#crime-wrap h1 a{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color:#333;
+}
+#crime-wrap h1 a:hover{
+    color:#0066ff;
+    text-decoration: none;
+}
+#crime-wrap h4{
+    padding:10px 0 5px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+#crime-wrap p{
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 0;
+    font-size: 15px;
+    line-height: 24px;
+}
+#crime-control{
+    position:relative;
+    height:100%;
+}
+   /*Single */
+   .single #content{
+    padding-bottom: 60px
+   }
+.single p,
+.single h2,
+.single h3{
+    font-family: 'Open Sans', sans-serif;
+}
+.single h1{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:48px;
+    line-height:56px;
+}
+.single p{
+    font-size:18px;
+    line-height: 36px;
+}
+.byline{
+    margin:15px 0;
+    font-size:15px;
+}
+@media (max-width: 767px) {
+  #map.single{
+    height:210px;
+  }
+  #content{
+    margin-top:225px;
+  }
+  h1{
+    font-size:24px;
+    line-height:36px;
+  }
+  h4,
+  p,
+  p.byline
+  {
+    font-size:13px;
+    line-height:21px;
+  }
+  #crime-wrap.span3{
+    width:100%;
+    top:inherit;
+    bottom:45px;
+    height:250px;
+  }
+  #crime-wrap #crime{
+    padding: 10px 10px 0 10px;
+  }
+} 
